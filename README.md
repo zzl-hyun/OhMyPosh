@@ -15,9 +15,12 @@ install D2Coding Nerd Patch
 ## Configuration
 1. Create Profile<br>
     ``` New-Item -Path $PROFILE -Type File -Force```
+
 2. Open Profile<br>
     ``` notepad $PROFILE```
+
 3. Edit Profile<br>
+
     ```oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/zzl-hyun/OhMyPosh/refs/heads/main/0_myCustom.omp.json.json' | Invoke-Expression```
 4. Apply<br>
     ```. $PROFILE```
