@@ -1,0 +1,87 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "blocks": [
+      {
+        "alignment": "left",
+        "segments": [
+          {
+            "foreground": "#af9ddf",
+            "style": "plain",
+            "template": "<b>{{.Icon}} ",
+            "type": "os"
+          },
+          {
+            "foreground": "#af9ddf",
+            "style": "plain",
+            "template": "<b>{{ .UserName }}@{{ .HostName }}:",
+            "type": "session"
+          },
+          {
+            "foreground": "#7eb8da",
+            "properties": {
+            "folder_separator_icon": "/",
+            "style": "agnoster_full"
+          },
+            "style": "plain",
+            "template": "<b>{{ .Path }} </>",
+            "type": "path"
+          },
+          {
+            "foreground": "#98bfad",
+            "properties": {
+              "fetch_stash_count": true,
+              "fetch_upstream_icon": true
+            },
+            "style": "powerline",
+            "template": "<b>{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+            "type": "git"
+          },
+          {
+            "foreground": "#98bfad",
+            "style": "plain",
+            "template": "<#26C6DA>\u276f</><#45F1C2>\u276f</>",
+            "type": "text"
+          }
+        ],
+        "type": "prompt"
+      },
+      {
+        "segments": [
+          {
+            "background": "#83769c",
+            "foreground": "#ffffff",
+            "style": "plain",
+            
+            "template": "<b><#83769c,transparent>\ue0b6</> \uf489 {{ .Name }}</> <transparent,#83769c>\ue0b2</>",
+            "type": "shell"
+          },
+          {
+            "background": "#86BBD8",
+            "foreground": "#ffffff",
+            "powerline_symbol": "\ue0b2",
+            "invert_powerline": true,
+            "properties": {
+              "always_enabled": true
+            },
+            "style": "powerline",
+            "template": " <b>{{ .FormattedMs }} ",
+            "type": "executiontime"
+          },
+          {
+            "background": "#33658A",
+            "foreground": "#ffffff",
+            "invert_powerline": true,
+            "leading_diamond": "\ue0b2",
+            "style": "diamond",
+            "template": " <b>{{ .CurrentDate | date .Format }} ",
+            "trailing_diamond": "\ue0b4",
+            "type": "time"
+          }
+        ],
+        "type": "rprompt"
+      }
+    ],
+    "final_space": true,
+    "version": 2
+  }
+  
