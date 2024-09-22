@@ -1,2 +1,2 @@
-# zzl-hyun-OhMyPosh
+# OhMyPosh
 OhMyPosh custom theme
