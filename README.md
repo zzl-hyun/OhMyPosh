@@ -21,6 +21,6 @@ install D2Coding Nerd Patch
 
 3. Edit Profile<br>
 
-    ```oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/zzl-hyun/OhMyPosh/refs/heads/main/0_myCustom.omp.json.json' | Invoke-Expression```
+    ```oh-my-posh init pwsh --config 'https://raw.githubusercontent.com/zzl-hyun/OhMyPosh/refs/heads/main/0_myCustom.omp.json' | Invoke-Expression```
 4. Apply<br>
     ```. $PROFILE```
